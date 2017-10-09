@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GroupManager</class>
+ <widget class="QDialog" name="GroupManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>270</width>
+    <height>326</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VarB: Groups</string>
+  </property>
+  <widget class="QListWidget" name="groupList">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>120</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>Isloates in the selected group</string>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::MultiSelection</enum>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="ungroupedList">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>60</y>
+     <width>120</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>Select isolates not in any group to add to the selected grroup</string>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::MultiSelection</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="removeSelectedButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>270</y>
+     <width>120</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>Remove the selected isolates from this group</string>
+   </property>
+   <property name="text">
+    <string>Remove Selected</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addSelectedButton">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>270</y>
+     <width>120</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>Add the selected ungrouped isolates to the group</string>
+   </property>
+   <property name="text">
+    <string>Add Selected</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="removeAllButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>293</y>
+     <width>120</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>Remove all of the isloates from this group</string>
+   </property>
+   <property name="text">
+    <string>Remove All</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="doneButton">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>293</y>
+     <width>120</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>Finish and return to the main application</string>
+   </property>
+   <property name="text">
+    <string>Done</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Ungrouped">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>35</y>
+     <width>120</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>Isolates not in any group</string>
+   </property>
+   <property name="text">
+    <string>Ungrouped</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="newGroupLine">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>5</y>
+     <width>120</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>New group name</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="groupCombo">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>32</y>
+     <width>120</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Select a group</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addGroupButton">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>5</y>
+     <width>50</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>Add this group to the list</string>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>doneButton</tabstop>
+  <tabstop>newGroupLine</tabstop>
+  <tabstop>addGroupButton</tabstop>
+  <tabstop>groupCombo</tabstop>
+  <tabstop>groupList</tabstop>
+  <tabstop>ungroupedList</tabstop>
+  <tabstop>removeSelectedButton</tabstop>
+  <tabstop>removeAllButton</tabstop>
+  <tabstop>addSelectedButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
