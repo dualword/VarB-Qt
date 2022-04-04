@@ -1,0 +1,11 @@
+#
+/src/.build/
+/src/varb
+Makefile
+.qmake.stash
+
+#
+/.cproject
+/.project
+/.externalToolBuilders
+/.settings

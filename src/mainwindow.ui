@@ -927,7 +927,7 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item>
-        <widget class="QWebView" name="props">
+        <widget class="QTextEdit" name="props">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
            <horstretch>0</horstretch>
@@ -953,11 +953,6 @@ p, li { white-space: pre-wrap; }
          </property>
          <property name="toolTip">
           <string>Description of the position and variant under the mouse</string>
-         </property>
-         <property name="url">
-          <url>
-           <string>about:blank</string>
-          </url>
          </property>
         </widget>
        </item>

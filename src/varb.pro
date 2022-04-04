@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT += core gui webkit
+QT += widgets
 
 CONFIG += static
 
@@ -60,3 +60,8 @@ FORMS    += mainwindow.ui \
     save.ui \
     feedback.ui \
     log.ui
+    
+OBJECTS_DIR = .build/obj
+MOC_DIR     = .build/moc
+RCC_DIR     = .build/rcc
+UI_DIR      =  .

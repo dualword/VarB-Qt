@@ -1,3 +1,4 @@
+/* VarB-Qt (2022) http://github.com/dualword/VarB-Qt License:GNU GPL */
 /*
  *  VarB - genomic analysis software
  *
@@ -35,7 +36,7 @@
  *  along with VarB.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-#include <QtGui/QApplication>
+#include <QtWidgets>
 #include "mainwindow.h"
 #include "variation.h"
 

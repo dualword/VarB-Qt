@@ -1,3 +1,4 @@
+/* VarB-Qt (2022) http://github.com/dualword/VarB-Qt License:GNU GPL */
 /*
  *  VarB - genomic analysis software
  *
@@ -41,7 +42,6 @@
 #include <QMainWindow>
 #include <QStatusBar>
 #include <QList>
-#include <QWebView>
 #include <QCheckBox>
 #include <QSignalMapper>
 #include <QtGui>

@@ -1,3 +1,4 @@
+/* VarB-Qt (2022) http://github.com/dualword/VarB-Qt License:GNU GPL */
 /*
  *  VarB - genomic analysis software
  *
@@ -63,7 +64,7 @@ void logOutput(QtMsgType type, const char *msg) {
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     logBrowser = new Log;
-    qInstallMsgHandler(logOutput);
+    //qInstallMsgHandler(logOutput);
 
     visible_range = 200;
     props_are_sticky = false;

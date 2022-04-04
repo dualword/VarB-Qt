@@ -1,3 +1,4 @@
+/* VarB-Qt (2022) http://github.com/dualword/VarB-Qt License:GNU GPL */
 /*
  *  VarB - genomic analysis software
  *
@@ -142,8 +143,8 @@ bool Annotation::loadGFF3 (QString filename, Sequence *sequence, QString filter)
                 names[item->name] = item;
             } else if (key == "description") {
                 QUrl u;
-                u.setEncodedPath(l[1].toAscii());
-                item->description = u.toString();
+                u.setUrl(l[1].toLatin1());
+                item->description = u.path();
 //                item->description = l[1];
                 item->description.replace("+"," ");
             } else if (key == "dbxref" || key == "alias" || key == "sanger") {
